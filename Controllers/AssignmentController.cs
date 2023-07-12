@@ -280,6 +280,40 @@ namespace TwoDo.Controllers
                 return BadRequest(ex);
             }
         }
+
+        [HttpPut("done")]
+        [Authorize]
+        public async Task<IActionResult> EditAssignmentStatus(int id)
+        {
+
+            var stringId = User?.FindFirstValue(ClaimTypes.NameIdentifier);
+            int userId = 0;
+
+            if (stringId != null)
+            {
+                userId = Int32.Parse(stringId);
+            }
+
+            Assignment? assignment  = await _db.Assignments.FirstOrDefaultAsync(a => a.UserId == userId && a.Id == id);
+
+            if (assignment == null) { 
+                return NotFound("Assignment not found");
+            }
+
+            if (assignment.IsDone == false)
+            {
+                assignment.IsDone = true;
+                assignment.CompleteDate = DateTime.Now;
+            }
+            else
+            {
+                assignment.IsDone = false;
+                assignment.CompleteDate = null;
+            }
+            _db.Assignments.Update(assignment);
+            await _db.SaveChangesAsync();
+            return Ok();
+        }
     }
 
 }

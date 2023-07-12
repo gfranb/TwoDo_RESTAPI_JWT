@@ -25,7 +25,7 @@ namespace TwoDo.Models
         public bool IsDone { get; set; } = false;
 
         [Column(TypeName = "Date")]
-        public DateTime CompleteDate { get; set; }
+        public DateTime? CompleteDate { get; set; }
 
         [JsonIgnore]
         public int UserId { get; set; }

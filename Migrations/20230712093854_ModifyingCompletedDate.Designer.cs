@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using TwoDo.Data;
@@ -11,9 +12,11 @@ using TwoDo.Data;
 namespace TwoDo.Migrations
 {
     [DbContext(typeof(TwoDoDbContext))]
-    partial class TwoDoDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230712093854_ModifyingCompletedDate")]
+    partial class ModifyingCompletedDate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
