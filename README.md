@@ -42,6 +42,7 @@ Run the application:
 The User API allows users to manage user-related operations, such as creating users, retrieving user details, updating user information, and deleting users.
 
   User Endpoints
+
     GET /api/users/admin: Retrieves all users. (Requires admin access)
     GET /api/users/users: Retrieves user details for the authenticated user.
     GET /api/users/admin/{id}: Retrieves user details by user ID. (Requires admin access)
@@ -55,6 +56,7 @@ The User API allows users to manage user-related operations, such as creating us
 The Assignment API allows users to manage task-related operations, such as creating tasks, retrieving tasks, updating task information, and deleting tasks.
 
   Assignment Endpoints
+
     GET /api/assignments/admin: Retrieves all tasks. (Requires admin access)
     GET /api/assignments: Retrieves tasks for the authenticated user.
     GET /api/assignments/admin/{id}: Retrieves a task by task ID. (Requires admin access)
