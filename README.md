@@ -70,11 +70,11 @@ The Assignment API allows users to manage task-related operations, such as creat
     
 # Technologies Used
 
-  ASP.NET Core
-  Microsoft.EntityFrameworkCore
-  Microsoft.AspNetCore.Authorization
-  Microsoft.AspNetCore.Mvc
-  Microsoft.IdentityModel.Tokens
-  CORS
-  JWT (JSON Web Tokens)
-  PostgerSQL
+  - ASP.NET Core
+  - Microsoft.EntityFrameworkCore
+  - Microsoft.AspNetCore.Authorization
+  - Microsoft.AspNetCore.Mvc
+  - Microsoft.IdentityModel.Tokens
+  - CORS
+  - JWT (JSON Web Tokens)
+  - PostgerSQL
