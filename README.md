@@ -43,30 +43,30 @@ The User API allows users to manage user-related operations, such as creating us
 
   User Endpoints
 
-    GET /api/users/admin: Retrieves all users. (Requires admin access)
-    GET /api/users/users: Retrieves user details for the authenticated user.
-    GET /api/users/admin/{id}: Retrieves user details by user ID. (Requires admin access)
-    POST /api/users/register: Registers a new user.
-    DELETE /api/users: Deletes the authenticated user.
-    DELETE /api/users/admin/{id}: Deletes a user by user ID. (Requires admin access)
-    PUT /api/users: Updates user information for the authenticated user.
-    PUT /api/users/admin/{id}: Updates user information by user ID. (Requires admin access)
+  - GET /api/users/admin: Retrieves all users. (Requires admin access)
+  - GET /api/users/users: Retrieves user details for the authenticated user.
+  - GET /api/users/admin/{id}: Retrieves user details by user ID. (Requires admin access)
+  - POST /api/users/register: Registers a new user.
+  - DELETE /api/users: Deletes the authenticated user.
+  - DELETE /api/users/admin/{id}: Deletes a user by user ID. (Requires admin access)
+  - PUT /api/users: Updates user information for the authenticated user.
+  - PUT /api/users/admin/{id}: Updates user information by user ID. (Requires admin access)
   
 # Assignment API
 The Assignment API allows users to manage task-related operations, such as creating tasks, retrieving tasks, updating task information, and deleting tasks.
 
   Assignment Endpoints
 
-    GET /api/assignments/admin: Retrieves all tasks. (Requires admin access)
-    GET /api/assignments: Retrieves tasks for the authenticated user.
-    GET /api/assignments/admin/{id}: Retrieves a task by task ID. (Requires admin access)
-    POST /api/assignments: Creates a new task for the authenticated user.
-    POST /api/assignments/admin/{id}: Creates a new task for a specific user. (Requires admin access)
-    DELETE /api/assignments: Deletes a task for the authenticated user.
-    DELETE /api/assignments/admin/{id}: Deletes a task by task ID. (Requires admin access)
-    PUT /api/assignments: Updates a task for the authenticated user.
-    PUT /api/assignments/admin/{id}: Updates a task by task ID. (Requires admin access)
-    PUT /api/assignments/done: Toggles the status of a task as completed or not for the authenticated user.
+  - GET /api/assignments/admin: Retrieves all tasks. (Requires admin access)
+  - GET /api/assignments: Retrieves tasks for the authenticated user.
+  - GET /api/assignments/admin/{id}: Retrieves a task by task ID. (Requires admin access)
+  - POST /api/assignments: Creates a new task for the authenticated user.
+  - POST /api/assignments/admin/{id}: Creates a new task for a specific user. (Requires admin access)
+  - DELETE /api/assignments: Deletes a task for the authenticated user.
+  - DELETE /api/assignments/admin/{id}: Deletes a task by task ID. (Requires admin access)
+  - PUT /api/assignments: Updates a task for the authenticated user.
+  - PUT /api/assignments/admin/{id}: Updates a task by task ID. (Requires admin access)
+  - PUT /api/assignments/done: Toggles the status of a task as completed or not for the authenticated user.
     
 # Technologies Used
 
