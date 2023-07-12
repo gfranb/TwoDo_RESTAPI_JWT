@@ -67,6 +67,25 @@ The Assignment API allows users to manage task-related operations, such as creat
   - PUT /api/assignments: Updates a task for the authenticated user.
   - PUT /api/assignments/admin/{id}: Updates a task by task ID. (Requires admin access)
   - PUT /api/assignments/done: Toggles the status of a task as completed or not for the authenticated user.
+
+# Authentication API
+The Authentication controller handles the authentication process in the TwoDo API. It provides an endpoint for user login, which generates a JSON Web Token (JWT) for authenticated users.
+
+Authentication Endpoint
+  User Login
+  - URL: /api/authentication/login
+  - Method: POST
+  - Description: Authenticates a user and generates a JWT.
+  - Request Body:
+    - UserDTO object (JSON) with email and password
+  - Successful Response:
+    - Code: 200 (OK)
+    - Content: JWT string
+  - Error Responses:
+    - Code: 400 (Bad Request)
+    - Content: "Wrong email"
+    - Code: 400 (Bad Request)
+    - Content: "Wrong password"
     
 # Technologies Used
 
