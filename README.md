@@ -1,4 +1,4 @@
-#TwoDo
+# TwoDo
 TwoDo is a task management API built with ASP.NET Core. It allows users to create, manage, and track their tasks. The API provides endpoints for task operations and user authentication.
 
 Getting Started
